@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import ContactItem from "../ContactItem"
 import "./ContactList.scss"
 
@@ -16,5 +17,11 @@ const ContactList = ({ contacts, deleteHandler }) => (
         ))}
     </ul>
 )
+
+
+ContactList.propTypes = {
+    contacts: PropTypes.array.isRequired,
+    deleteHandler: PropTypes.func.isRequired,
+}
 
 export default ContactList;

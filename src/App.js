@@ -4,7 +4,7 @@ import ContactForm from "./Components/ContactForm";
 import ContactList from "./Components/ContactList";
 import { v4 as uuidv4 } from 'uuid';
 import Filter from "./Components/Filter";
-import "./App.scss";
+import "./styles.scss";
 
 class App extends Component {
 
@@ -16,8 +16,6 @@ class App extends Component {
       {id: 'id-4', name: 'Annie Copeland', number: '227-91-26'},
     ],
     filter: '',
-    name: '',
-    number: ''
   }
 
   formSubmitHandler = (data) => {

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import "./ContactItem.scss"
 
 const ContactItem = ({ name, number, id, deleteHandler }) => (
@@ -12,5 +13,12 @@ const ContactItem = ({ name, number, id, deleteHandler }) => (
         >Delete</button>
     </>
 )
+
+ContactItem.propTypes = {
+    name: PropTypes.string.isRequired,
+    number: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    deleteHandler: PropTypes.func.isRequired,
+}
 
 export default ContactItem;
